@@ -35,6 +35,11 @@ namespace CoreWebApi.Controllers
             {
                 return new Model.Employee { EmployeeId = 2, FirstName = "Vishal", LastName = "Vadgama", Designation = "Technical Lead" };
             }
+            else if (id == 3)
+            {
+                return new Model.Employee { EmployeeId = 3, FirstName = "foo", LastName = "bar", Designation = "none" };
+            }
+
             return null;
         }
 
