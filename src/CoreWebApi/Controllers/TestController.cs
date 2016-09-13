@@ -19,9 +19,10 @@ namespace CoreWebApi.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{id}/{foo}/{start}/{end}")]
+        public string Get(int id, string foo, DateTime start, DateTime end)
         {
+            System.Console.WriteLine("{0} {1} {2}", foo, start, end);
             return "value";
         }
 
